@@ -16,7 +16,7 @@ menu.show(function()
 end)
 
 local mash = {"cmd", "alt", "ctrl"}
-local musicmash = {"cmd", "shift"}
+local altmash = {"cmd", "shift"}
 local mashshift = {"cmd", "alt", "shift"}
 
 local function opendictionary()
@@ -24,7 +24,12 @@ local function opendictionary()
   application.launchorfocus("Dictionary")
 end
 
-hotkey.bind(mash, 'D', opendictionary)
+-- Application Launching Commands
+hotkey.bind(altmash, 'D', opendictionary)
+hotkey.bind(altmash, 'H', function() application.launchorfocus("HipChat") end)
+hotkey.bind(altmash, 'M', function() application.launchorfocus("MacVim") end)
+hotkey.bind(altmash, 'N', function() application.launchorfocus("Chrome") end)
+hotkey.bind(altmash, 'I', function() application.launchorfocuse("iTerm") end)
 
 hotkey.bind(mash, ';', function() ext.grid.snap(window.focusedwindow()) end)
 hotkey.bind(mash, "'", function() fnutils.map(window.visiblewindows(), ext.grid.snap) end)
@@ -56,6 +61,6 @@ hotkey.bind(mash, 'X', logger.show)
 hotkey.bind(mash, "R", repl.open)
 
 -- Spotify Commands
-hotkey.bind(musicmash, 'space', ext.spotify.currentTrack)
+hotkey.bind(altmash, 'space', ext.spotify.currentTrack)
 
 updates.check()
