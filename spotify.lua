@@ -29,6 +29,6 @@ function ext.spotify.currentTrack()
   local artist = ext.spotify.tell('get the artist of the current track')
   local album = ext.spotify.tell('get the album of the current track')
   local track = ext.spotify.tell('get the name of the current track')
-  hydra.alert(track .. '\n' .. album .. '\n' .. artist, 1.5);
+  hydra.alert(track .. '\n by ' .. artist, 1.0);
   -- notify.show(track .. ' - ' .. artist, album, "", "") notification center notification
 end
