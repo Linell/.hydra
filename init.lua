@@ -1,4 +1,20 @@
--- refers to grid.lua in this directory, taken from the Hydra wiki: https://github.com/sdegutis/hydra/wiki/Useful-Hydra-libraries
+---
+--  
+--   ▄█    █▄    ▄██   ▄   ████████▄     ▄████████    ▄████████ 
+--  ███    ███   ███   ██▄ ███   ▀███   ███    ███   ███    ███ 
+--  ███    ███   ███▄▄▄███ ███    ███   ███    ███   ███    ███ 
+-- ▄███▄▄▄▄███▄▄ ▀▀▀▀▀▀███ ███    ███  ▄███▄▄▄▄██▀   ███    ███ 
+--▀▀███▀▀▀▀███▀  ▄██   ███ ███    ███ ▀▀███▀▀▀▀▀   ▀███████████ 
+--  ███    ███   ███   ███ ███    ███ ▀███████████   ███    ███ 
+--  ███    ███   ███   ███ ███   ▄███   ███    ███   ███    ███ 
+--  ███    █▀     ▀█████▀  ████████▀    ███    ███   ███    █▀  
+--                                      ███    ███              
+--- -------------------------------------------------------------------------------
+--   Linell Bonnette / thelinell.com / @thelinell
+--    https://github.com/Linell/.hydra
+--    https://github.com/sdegutis/hydra
+--- -------------------------------------------------------------------------------
+
 dofile(package.searchpath("grid", package.path))
 dofile(package.searchpath("spotify", package.path))
 
