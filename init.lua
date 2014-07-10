@@ -28,8 +28,7 @@ end
 hotkey.bind(altmash, 'D', opendictionary)
 hotkey.bind(altmash, 'H', function() application.launchorfocus("HipChat") end)
 hotkey.bind(altmash, 'M', function() application.launchorfocus("MacVim") end)
-hotkey.bind(altmash, 'N', function() application.launchorfocus("Chrome") end)
-hotkey.bind(altmash, 'I', function() application.launchorfocuse("iTerm") end)
+hotkey.bind(altmash, 'N', function() application.launchorfocus("Google Chrome") end)
 
 hotkey.bind(mash, ';', function() ext.grid.snap(window.focusedwindow()) end)
 hotkey.bind(mash, "'", function() fnutils.map(window.visiblewindows(), ext.grid.snap) end)
